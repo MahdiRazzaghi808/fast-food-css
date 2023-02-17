@@ -1,0 +1,151 @@
+@media (min-width: 430px) {
+    .off__product {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .off__product__wrapper {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 510px;
+
+    }
+
+    .product {
+        width: 48%;
+    }
+
+    .client__person {
+        flex-basis: 48%;
+        width: 100%;
+    }
+
+    .client__person.active-sm {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 690px;
+    }
+
+    .off__wrapper {
+        flex-direction: row;
+    }
+
+    .off__product {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .off__product__wrapper {
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about__wrapper {
+        flex-direction: row
+    }
+
+    .about__content {
+        order: 1;
+        flex-basis: 50%;
+        width: 100%;
+    }
+
+    .about__image {
+        order: 0;
+        flex-basis: 50%;
+    }
+
+    .book__content {
+        flex-direction: row
+    }
+
+    form {
+        flex-basis: 50%;
+    }
+
+    .book__map {
+        flex-basis: 50%;
+
+    }
+
+    .footer__first-row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        gap: 0;
+    }
+
+    .footer__call {
+        flex-basis: 33%;
+    }
+
+    .footer__social {
+        flex-basis: 33%;
+    }
+
+    .footer__open {
+        flex-basis: 33%;
+    }
+
+
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 930px;
+
+    }
+
+    .nav {
+        display: flex
+    }
+
+    .hamberger {
+        display: none
+    }
+
+    .off__product {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .off__product__wrapper {
+        align-items: flex-start;
+    }
+
+    .product {
+        width: 32%;
+    }
+
+    .client__person {
+        flex-basis: 49%;
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+
+    }
+
+    .nav__menu {
+        margin-right: 6rem;
+    }
+}

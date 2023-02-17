@@ -1,0 +1,730 @@
+:root {
+    --main-color: #ffbe33;
+    --main-color-hover: #e69c00;
+    --bg-color: #222831;
+}
+
+@font-face {
+    font-family: "dancing-Script";
+    src: url(../font/DancingScript-Medium.ttf);
+}
+
+@font-face {
+    font-family: openSans;
+    src: url(../font/OpenSans-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: openSans;
+    color: #0c0c0c;
+
+}
+
+
+.container {
+    width: 100%;
+    padding: 0 0.5rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 0.6rem 1.85rem;
+    font-family: openSans;
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 2rem;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--main-color-hover);
+}
+
+/* 
+================================
+
+
+================================
+*/
+.header {
+    width: 100%;
+    height: 100vh;
+    background: url(../image/header/hero-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding-top: 1.5rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo span {
+    font-family: "dancing-Script";
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.nav {
+    display: none
+}
+
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 2rem;
+}
+
+.nav__menu>li {
+    padding: 0 1rem
+}
+
+.nav__menu a {
+    color: #fff;
+    transition: all 0.2s linear;
+}
+
+.nav__menu a:hover {
+    color: var(--main-color)
+}
+
+.nav__menu a.active {
+    color: var(--main-color)
+}
+
+
+
+.nav__link {
+    display: flex;
+    align-items: center;
+}
+
+.nav__link * {
+    margin-right: 1rem
+}
+
+.nav__link svg {
+    width: 1rem;
+    height: 1rem;
+    stroke: #fff;
+    fill: #fff;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.nav__link svg:hover {
+    fill: var(--main-color);
+    stroke: var(--main-color);
+}
+
+.nav__link svg:nth-child(3) {
+    stroke: #fff;
+    fill: transparent
+}
+
+.nav__link svg:nth-child(3):hover {
+    stroke: var(--main-color);
+    font: transparent;
+}
+
+/* 
+
+
+*/
+
+.hamberger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    cursor: pointer;
+}
+
+.hamberger span {
+    width: 2.25rem;
+    height: 4px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+/* 
+
+*/
+
+.header__content {
+    margin-top: 8rem
+}
+
+.header__content>h1 {
+    font-family: "dancing-Script";
+    font-weight: bold;
+    font-size: 3.25rem;
+}
+
+.header__content>p {
+    max-width: 510px;
+    margin: 1.5rem 0;
+    font-size: 14px;
+}
+
+.header__content>button {
+    padding: 0.6rem 2.5rem
+}
+
+.header__content__slide-button {
+    display: flex;
+    align-items: center;
+    margin-top: 10rem;
+    gap: 0.5rem;
+}
+
+.header__content__slide-button>span {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.header__content__slide-button>span.active {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--main-color)
+}
+
+
+/* 
+================================
+
+================================
+*/
+
+.off {
+    margin: 6rem 0;
+
+}
+
+.off__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.off__product {
+    font-family: "dancing-Script";
+    font-weight: 400;
+    background-color: var(--bg-color);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 3px;
+    flex-basis: 50%;
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.off__product:hover img {
+    transform: scale(1.15)
+}
+
+.off__product__image {
+    width: 11rem;
+    height: 11rem;
+    border-radius: 100%;
+    border: 5px solid var(--main-color);
+    overflow: hidden;
+}
+
+.off__product__image img {
+    width: 100%;
+    transition: all 0.2s linear;
+}
+
+.off__product__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.off__product__name {
+    font-size: 1.5rem;
+}
+
+.off__product__discount {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.off__product__discount>span {
+    font-size: 2rem
+}
+
+.off__button__wrapper {
+    position: relative;
+    width: 170px
+}
+
+.off__button__wrapper button {
+    padding: 0.6rem 3.5rem 0.6rem 1.5rem;
+
+}
+
+.off__button__wrapper svg {
+    position: absolute;
+    top: 0.5rem;
+    right: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    stroke: #fff;
+    fill: #fff;
+}
+
+/* 
+=================================
+
+
+=================================
+*/
+.products {}
+
+.products__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products__title {
+    font-family: "dancing-Script";
+    font-size: 2rem;
+}
+
+.products__menu {
+    margin: 3rem 0 2rem 0
+}
+
+.products__menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.products__menu a {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    color: #0c0c0c;
+}
+
+.products__menu a.active {
+    background-color: #0c0c0c;
+    color: #fff;
+    border-radius: 3rem;
+}
+
+
+
+.products__main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem 0
+}
+
+.product {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    border-radius: 2rem 2rem 1rem 1rem;
+
+}
+
+.product:hover img {
+    transform: scale(1.1);
+}
+
+.product__image {
+    background: #f1f2f3;
+    width: 100%;
+    height: 220px;
+    border-radius: 1rem 1rem 0 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product__image img {
+    width: 70%;
+    height: 70%;
+    object-fit: scale-down;
+    transition: all 0.2s linear;
+}
+
+.product__content {
+    padding: 1.5rem
+}
+
+.product__content h5 {
+    font-size: 1.5rem
+}
+
+.product__content p {
+    margin: 1rem 0;
+}
+
+.product__sell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product__sell div {
+    padding: 0.75rem 1rem;
+    border-radius: 100%;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+.product__sell svg {
+    stroke: #fff;
+    fill: #fff;
+
+}
+
+.progress__btn-more {
+    margin-top: 2rem;
+}
+
+.progress__btn-more button {
+    padding: 0.6rem 3rem
+}
+
+/* 
+
+*/
+
+.about {
+    background-color: var(--bg-color);
+    color: #fff;
+    margin: 6rem 0;
+    padding: 0 0.5rem
+        /* height: 100vh */
+}
+
+.about__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+    gap: 2rem;
+}
+
+
+
+.about__content h2 {
+    font-family: "dancing-Script";
+    font-size: 3rem
+}
+
+.about__content p {
+    margin: 1rem 0
+}
+
+.about__image {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about__wrapper img {
+
+    width: 80%;
+
+}
+
+/* 
+
+*/
+
+.book__title h2 {
+    font-family: "dancing-Script";
+    font-size: 2rem;
+}
+
+.book__content {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    width: 100%;
+    gap: 1.5rem
+}
+
+form input {
+    outline: none;
+    border: 1px solid #999;
+    font-family: openSans;
+    width: 100%;
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
+    border-radius: 5px;
+    height: 2rem;
+    font-size: 1rem;
+
+}
+
+form input::placeholder {
+    color: #0c0c0c;
+    font-size: 1rem;
+    font-family: openSans;
+}
+
+form select {
+    outline: none;
+    border: 1px solid #999;
+    font-family: openSans;
+    width: 100%;
+    padding: 0.75rem 0.75rem 0.75rem 1.75rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(../image/arrow.svg);
+    background-position: 98%;
+    background-repeat: no-repeat;
+}
+
+form button.btn {
+    padding: 0.6rem 3.5rem;
+}
+
+.book__map {
+    flex-basis: 100%;
+    width: 100%;
+    height: 22.5rem;
+    border-radius: 2rem;
+}
+
+.book__map img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    transform: translateY(-0.75rem)
+}
+
+/* 
+
+
+*/
+.client {
+    margin: 5rem 0;
+}
+
+.client__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.client__wrapper h2 {
+    font-family: "dancing-Script";
+    font-size: 2rem;
+}
+
+.client__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+    margin: 3rem 0 1.5rem 0
+}
+
+
+
+.client__person {
+    flex-basis: 100%;
+    width: 100%;
+    display: none;
+}
+
+.client__person.active {
+    display: inline-block;
+}
+
+
+
+.client__person__detail {
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+
+
+.client__person__detail p {
+    font-size: 15px;
+}
+
+.client__person__detail h6 {
+    margin: 0.75rem 0 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.client__image {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+    margin: 2rem 0;
+    position: relative;
+    z-index: 1;
+
+}
+
+.client__image img {
+
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 5px solid var(--main-color);
+
+    position: relative;
+}
+
+.client__image::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: -0.75rem;
+    left: 40%;
+    width: 1.75rem;
+    height: 1rem;
+    background-color: var(--main-color);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+
+
+
+
+
+.client__pagination {
+    display: flex;
+    gap: 0.6rem
+}
+
+.client__pagination span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1rem;
+    border-radius: 100%;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+
+/* 
+
+
+*/
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
+}
+
+.footer {
+    width: 100%;
+    padding: 4rem 0 3rem 0;
+    background-color: var(--bg-color);
+    color: #dbdbdb
+}
+
+
+
+.footer__first-row {
+    margin-bottom: 3rem;
+    gap:2rem
+}
+
+.footer h4 {
+    font-size: 2rem;
+    font-family: "dancing-Script";
+    color:#fff
+}
+
+.footer__call a {
+    color: #fff;
+    transition: all 0.2s linear;
+}
+
+.footer__call a:hover {
+    color: var(--main-color)
+}
+
+.footer__social{
+    text-align: center;
+    
+}
+.footer__social-main {
+    display: flex;
+    gap: 0.5rem
+}
+
+.footer__social-main a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1rem;
+    height: 1rem;
+    padding:1rem;
+    border-radius: 100%;
+    color: var(--bg-color);
+    background-color: #fff;
+    transition: all 0.2s linear;
+}
+
+.footer__social-main a:hover{
+    color: var(--main-color);
+}
